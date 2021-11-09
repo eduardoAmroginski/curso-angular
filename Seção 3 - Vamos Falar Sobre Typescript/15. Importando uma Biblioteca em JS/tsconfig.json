@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "noEmitOnError": false,
+    "typeRoots": ["node_modules/@types"]
+  }
+}
+
+// Usamos outDir para dizer em qual pasta devemos salvar os arquivos compilados.
+// Usamos noEmitOnError para evitar que os arquivos sejam compilados em caso de erro.

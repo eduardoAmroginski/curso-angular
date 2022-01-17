@@ -1,4 +1,6 @@
-<div>
-  Student: {{ student.name }}
-  <div *ngIf="student.isJedi">Jedi Temple: {{ student.temple }}</div>
+<div *ngIf="student">
+  Student: {{ student?.name }}
+  <div *ngIf="student?.isJedi">Jedi Temple: {{ student?.temple }}</div>
 </div>
+
+<p *ngIf="!student">Sem dados para exibir</p>

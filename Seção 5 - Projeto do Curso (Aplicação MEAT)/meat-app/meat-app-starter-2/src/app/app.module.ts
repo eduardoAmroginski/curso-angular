@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { CardRestaurantComponent } from './restaurants/card-restaurant/card-restaurant.component'
 
+import { RestaurantsService } from './restaurants/restaurants.service';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { CardRestaurantComponent } from './restaurants/card-restaurant/card-rest
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestaurantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
